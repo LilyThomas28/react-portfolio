@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Navbar from './navbar'
 
-const About = () => {
+const Contact = () => {
     return (
-        <About />
+        <Contact />
     );
 };
 
-export default About;
+export default Contact;
