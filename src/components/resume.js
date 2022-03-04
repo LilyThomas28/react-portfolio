@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 
 const Resume = () => {
     return (
-        <Resume />
+        <div>
+            <h1>Resume</h1>
+        </div>
     );
 };
 
