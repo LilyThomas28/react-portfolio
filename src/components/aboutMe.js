@@ -3,7 +3,7 @@ import Navbar from './navbar'
 
 const About = () => {
     return (
-        <div className="aboutMe">
+        <div>
             <h1>About Me</h1>
             <p>
                 Current student at UCSD Extension program for Full Stack Web Development. 
