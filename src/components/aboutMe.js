@@ -1,9 +1,10 @@
 import React from 'react';
+import '../style.css';
 
 const About = () => {
     return (
         <div>
-            <h1>About Me</h1>
+            <h1 style={{color: "#3f8d59"}}>About Me</h1>
             <p>
                 Current student at UCSD Extension program for Full Stack Web Development. 
                 Known for being a hard worker and a good problem solver. 

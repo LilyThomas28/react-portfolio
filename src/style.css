@@ -1,0 +1,287 @@
+/* assign variables for colors used for ease and consistency */
+:root {
+    --dark: #172121;
+    --indep: #3f8d59;
+    --grey: #fdbfc8;
+    --shadow: #BFACB5;
+    --champ: #e5d0cc;
+}
+
+#green {
+    color: var(--indep);
+}
+
+/* ensure images fill their containers */
+img {
+    width: 100%;
+}
+
+/* set up consistent font, text color and background color */
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background-color: var(--mintCream);
+    color: var(--dark);
+}
+
+header {
+    width: 100%;
+    background-color: var(--indep);
+    padding: 1.5%; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+/* create box shadow for name */
+header h1 {
+    font-size: 175%;
+    color: var(--champ);
+    padding: 1%;
+    border-radius: 6px;
+    box-shadow: 1px 1px 15px 5px var(--grey);
+}
+
+header nav {
+    margin-right: 2%;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+/* spacing of nav elements */
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    padding-bottom: 2%;
+    border-bottom: 2px solid var(--champ);
+}
+
+header a {
+    color: var(--champ);
+    text-decoration: none;
+}
+
+#photo-header {
+    width: 100%;
+    position: relative;
+}
+
+/* adjust size of image container to and use position absolute to keeo in front of background and on the left */
+#self-photo {
+    width: 9.5%;
+    position: absolute;
+    top: 12%;
+    left: 2%;
+    padding: 0;
+}
+
+#self-photo img {
+    border-radius: 6px;
+    box-shadow: 1px 1px 15px 5px var(--indep);
+}
+
+/* use position absolute to see and position subtitle over background image */
+#subtitle {
+    position: absolute;
+    top: 45%;
+    right: 5%;
+}
+
+/* specify only the h2 in the photo header section */
+#subtitle h2 {
+    font-size: 120%;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    color: var(--dark);
+}
+
+/* set specific width for .left and .right to ensure even horizontal placing of titles */
+.left {
+    width: 22%;
+    height: 100%;
+    align-self: center;
+    padding: 1%;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right {
+    width: 78%;
+    padding: 1.5%;
+    margin: 0.75%;
+    border-left: 5px solid var(--dark);
+}
+
+h2 {
+    font-size: 150%;
+    color: var(--dark);
+    height: 100%;
+}
+
+#about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: stretch;
+    align-content: space around;
+}    
+
+#work {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}    
+
+#row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-around;
+}
+
+#row3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-around;
+}
+
+#bigbox, .regbox {
+    margin: 1%;
+    position: relative;
+}
+
+/* border style around all images wrapped in <a> tag */
+a img {
+    border: 5px solid var(--indep);
+}
+
+/* use position absolute to see and position titles over images */
+.projectname {
+    color: var(--champ);
+    font-size: 85%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 1.5%;
+    background-color: var(--indep);
+}
+
+.regbox .projectname {
+    padding: 3.2%;
+}
+
+.projectname p {
+    font-size: 65%;
+    padding-top: 5%;
+}
+
+#contact-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: stretch;
+}    
+
+#contact-me a {
+    padding: 1%;
+    color: var(--dark);
+}
+
+#resume {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: stretch;
+}    
+
+#resume a {
+    padding: 1%;
+    color: var(--dark);
+}
+
+
+#work img { 
+    opacity: 0.9; 
+    transition: all 0.2s ease-in-out;
+  } 
+  
+#work img:hover { 
+    opacity: 1; 
+    box-shadow: inset 0px 0px 5px var(--shadow), 0 0 10px var(--shadow);
+  }
+
+#project-links {
+    color: var(--champ);
+    font-size: 85%;
+}
+
+/* for viewing with mobile phones */
+@media screen and (max-width: 768px) {    
+   
+    #subtitle {
+        position: absolute;
+        top: 35%;
+        right: 5%;
+        color: var(--indep);
+    }
+
+    h2 {
+        font-size: 80%;
+    }
+   /* Place pictures in a single column */
+    #row2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: space around;
+    }
+    #row3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: space around;
+    }
+
+    /* keep second through fifth pictures smaller than first */
+    .regbox {
+        width: 75%;
+    }
+
+    /* justify smaller pictures in center */
+    .regbox a {
+        justify-items: center;
+    }
+
+    /* put section titles above each section instead of on the left  */
+    #about-me, #work, #contact-me, #resume {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Adjust borders for column direction, align h2 element, and adjust borders*/
+    .left {
+        border-bottom: 5px solid var(--dark);
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15%;
+    }
+
+    .right {
+        border: none;
+    }
+} 
