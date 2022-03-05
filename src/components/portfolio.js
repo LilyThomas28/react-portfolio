@@ -12,7 +12,7 @@ const Portfolio = () => {
                         <div id="row1">
                             <div id="bigbox">
                                 <a href="https://lilythomas28.github.io/pet-adoption/" target="_blank" rel="noopener noreferrer">
-                                    <img src="./images/Screen Shot 2022-01-19 at 10.31.54 PM.png" alt="pet-adoption project page" />
+                                    <img src="../images/Screen Shot 2022-01-19 at 10.31.54 PM.png" alt="pet-adoption project page" />
                                 </a>
                                 <div className="projectname">
                                     <h3>Pet Adoption</h3>
@@ -25,7 +25,7 @@ const Portfolio = () => {
                         <div id="row2">
                             <div className="regbox">
                                 <a href="https://lilythomas28.github.io/code-quiz/" target="_blank" rel="noopener noreferrer">
-                                    <img id="imgpro2" src="./images/Screen Shot 2022-01-19 at 11.06.15 PM.png" alt="code-quiz homework page" />
+                                    <img id="imgpro2" src="../images/Screen Shot 2022-01-19 at 11.06.15 PM.png" alt="code-quiz homework page" />
                                 </a>
                                 <div className="projectname">
                                     <h3>Code Quiz</h3>
@@ -35,7 +35,7 @@ const Portfolio = () => {
                             </div>
                             <div className="regbox">
                                 <a href="https://film-factory.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                                    <img src="./images/Screen Shot 2022-02-24 at 4.51.55 PM.png" alt="film factory home page" />
+                                    <img src="../images/Screen Shot 2022-02-24 at 4.51.55 PM.png" alt="film factory home page" />
                                 </a>
                                 <div className="projectname">
                                     <h3>Film Factory</h3>
@@ -48,7 +48,7 @@ const Portfolio = () => {
                         <div id="row3">
                             <div className="regbox">
                                 <a href="https://shrouded-badlands-92244.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                                    <img src="./images/Screen Shot 2022-02-24 at 4.55.42 PM.png" alt="note taker home page" />
+                                    <img src="../images/Screen Shot 2022-02-24 at 4.55.42 PM.png" alt="note taker home page" />
                                 </a>
                                 <div className="projectname">
                                     <h3>Note Taker</h3>
@@ -58,7 +58,7 @@ const Portfolio = () => {
                             </div>
                             <div className="regbox">
                                 <a href="https://lilythomas28.github.io/password-generator/" target="_blank" rel="noopener noreferrer">
-                                    <img src="./images/Screen Shot 2022-02-24 at 4.54.03 PM.png" alt="password generator main page" />
+                                    <img src="../images/Screen Shot 2022-02-24 at 4.54.03 PM.png" alt="password generator main page" />
                                 </a>
                                 <div className="projectname">
                                     <h3>Password Generator</h3>
