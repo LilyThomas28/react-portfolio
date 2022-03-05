@@ -5,7 +5,7 @@ const Navbar = ({ currentPage, handlePageChange }) => {
         <header>
             <h1>Lily Thomas</h1>
             <nav>
-                        <ul className="nav nav-tabs d-flex justify-content-end">
+                <ul className="nav nav-tabs d-flex justify-content-end">
                     <li className="nav-item">
                         <a href="#about" onClick={() => handlePageChange('About')} className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>
                             About

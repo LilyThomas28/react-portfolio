@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import Navbar from './navbar'
+import React from 'react';
 
 const Contact = () => {
     return (

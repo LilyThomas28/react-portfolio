@@ -1,10 +1,6 @@
-import './App.css';
-// import  from './';
+import React from "react";
+import PageContainer from "./components/pageContainer";
 
-function App() {
-  // return (
-  //   < />
-  // );
-}
+const App = () => <PageContainer />;
 
 export default App;
